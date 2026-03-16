@@ -15,7 +15,13 @@ const model = new ChatMistralAI({
   temperature: 0,
 });
 
-// messages array to send all chats to AI (Context simulation)
+/*
+  messages array to send all chats to AI (Context)
+  ------------------------------------------------
+  This is not a scalable way to implement chat context.
+  Pricing would be high,
+  AI Response time will increase.
+*/
 const messages = [];
 
 while (true) {
